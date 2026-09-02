@@ -5,6 +5,12 @@
 ![GUI](https://img.shields.io/badge/GUI-tkinter-orange)
 ![TTS](https://img.shields.io/badge/TTS-edge--tts%20%7C%20ElevenLabs-blueviolet)
 
+## 스크린샷
+
+![무료판 GUI](assets/gui-free.png)
+
+*무료판(edge-tts) 실행 화면 — 목소리·속도 선택, 대본 파일 지정, 변환 진행 로그*
+
 > `.txt` 대본 파일의 **각 줄을 순서대로 음성 파일(mp3)로** 만들어 주는 데스크톱 프로그램.
 > 코딩을 몰라도 버튼만 누르면 되도록 만들었고, 결과물은 날짜·제목별 폴더로 자동 정리됩니다.
 
