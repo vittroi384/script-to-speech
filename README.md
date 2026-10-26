@@ -7,7 +7,7 @@
 
 ## 스크린샷
 
-![무료판 GUI](assets/gui-free.png)
+<p align="center"><img src="assets/gui-free.png" width="360" alt="무료판 GUI"></p>
 
 *무료판(edge-tts) 실행 화면 — 목소리·속도 선택, 대본 파일 지정, 변환 진행 로그*
 
