@@ -70,6 +70,10 @@ pyinstaller elevenlabs_gui.spec
 
 `dist/` 폴더에 exe가 생성됩니다. (빌드 결과물은 저장소에 올리지 않습니다.)
 
+## 구조
+
+![대본 TTS 변환 도구 동작 구조](assets/architecture.png)
+
 ## 기술적 특징
 
 표준 라이브러리 tkinter만으로 GUI를 구성해 **런타임 의존성을 최소화**(무료판 edge-tts, 유료판 requests 단 하나)했고, 합성 작업은 별도 스레드에서 돌려 UI가 멈추지 않습니다. 파일명 기반 **이어하기(멱등 재실행)**, 요청 실패 시 고정 간격으로 최대 3회 시도, 폴더명 불가 문자 정리(sanitize), PyInstaller `frozen` 여부를 감지해 exe 옆에 설정을 저장하는 경로 처리 등 비개발자 배포를 전제로 한 견고성 디테일을 담았습니다. ElevenLabs 연동은 SDK 없이 REST API(`xi-api-key` 헤더)를 직접 호출합니다.
